@@ -1,0 +1,17 @@
+h1, h2 {
+  font-size: 2em;
+  font-weight: bold;
+  color: white; }
+
+body {
+  background: #0b4019; }
+
+.container {
+  width: 50%; }
+  .container .form-wrap, .container list-wrap {
+    padding-bottom: 20px;
+    padding-top: 20px; }
+  .container .panel-title {
+    color: #ff00ff; }
+
+/*# sourceMappingURL=style.css.map */

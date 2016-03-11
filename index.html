@@ -1,0 +1,46 @@
+<!doctype html>
+<html ng-app="todoApp">
+    <head>
+        <title>Todo List</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/final.css">
+    </head>
+    <body ng-controller="todoCtrl as x"  ng-init="x.loadTodo()">
+        <div class="container">
+            <div class="row form-wrap">
+                <h1>Manage Your Todo List</h1>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <textarea rows=1 cols=75 ng-model="x.todo_txt" name="todo_txt" class="form-control textbox" placeholder="Add Your Todos" ></textarea>
+                        <button ng-click="x.addTodo()" class="btn btn-warning">Add ToDo</button>
+                    </div>
+                </form>
+			</div>
+            <div class="row list-wrap">
+                <div class="panel panel-warning">
+                    <div class="panel-heading"><h2 class="panel-title">List of my ToDos</h2></div>
+                    <div class="panel-body">
+                        <ul class="list-group" id="todolist">
+                            <li ng-repeat="todo in x.todos" class="list-group-item">
+								<div class="row">
+									<div contenteditable class="col-sm-9 item" ng-blur="save=false" ng-focus="save=true">
+										{{todo}}
+									</div>
+									<div class="col-sm-3 text-right">
+										<span ng-if="save" ng-click="x.editTodo($index)" style="cursor: pointer; color:darkgreen;" class="glyphicon glyphicon-ok"></span> 
+										<span ng-click="x.removeTodo($index)" style="color: crimson;cursor: pointer;" class="glyphicon glyphicon-remove"></span>
+									</div>	
+								</div>
+							</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        
+        </div>
+        <script src="bin/app.js" type="application/javascript"></script>
+    </body>
+</html>

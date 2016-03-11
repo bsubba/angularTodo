@@ -1,0 +1,22 @@
+{
+  "name": "todolist",
+  "homepage": "https://github.com/bsubba/angular-todo",
+  "authors": [
+    "Bikash"
+  ],
+  "description": "trying to learn git,bower, grunt angularjs,html5",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.0",
+    "bootstrap": "^3.3.6"
+  }
+}

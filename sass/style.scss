@@ -1,0 +1,26 @@
+
+@mixin hMain($fontSize, $fontWeight, $fontColor){
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $fontColor;
+}
+
+h1, h2{
+    @include hMain(2em, bold, white);
+}  
+
+body{
+    background: #0b4019;
+}
+
+.container{
+	width: 50%;
+    .form-wrap, list-wrap{
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+	.panel-title{
+		color:#ff00ff;
+	}
+}
+

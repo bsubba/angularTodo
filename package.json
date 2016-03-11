@@ -1,0 +1,30 @@
+{
+  "name": "testgrunt",
+  "version": "1.0.0",
+  "description": "learn different stuffs",
+  "main": "index.js",
+  "dependencies": {
+    "bower": "^1.7.7",
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsubba/angular-todo.git"
+  },
+  "author": "Bikash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bsubba/angular-todo/issues"
+  },
+  "homepage": "https://github.com/bsubba/angular-todo#readme"
+}
